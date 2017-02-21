@@ -1,5 +1,5 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
+#!/usr/bin/python
 from __future__ import division
 from __future__ import unicode_literals
 
@@ -16,7 +16,6 @@ import codecs
 from collections import defaultdict
 from em_emoji import all_emoji
 from em_message import EMMessage
-from pprint import pformat
 
 
 class MyEmojiMessages():
@@ -116,7 +115,7 @@ if __name__ == '__main__':
 
     file_path = os.path.expanduser('~/Desktop/%s_messages.json' % os.getlogin())
     with codecs.open(file_path, 'w', 'utf-8') as out_file:
-        json.dump(save, out_file, indent=4, separators=(',', ': '))
+        json.dump(save, out_file)
 
 
 
